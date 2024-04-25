@@ -1,0 +1,89 @@
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        String texto1 = "HOLA :D";
+        Integer num= 8;
+        Double num2= 0.23;
+        Boolean decla= false;
+        System.out.println(texto1);
+        System.out.println(num);
+        System.out.println(num2);
+        System.out.println(decla);
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        String texto1 = "HOLA :D";
+        String texto2 = "ADIOS >:I";
+     System.out.println(texto1 + " Y " + texto2);
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Integer num1 = 10;
+        Integer num2 = 10;
+     System.out.println(num1 + num2);
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+    Integer num = 12;
+    Double num2 = 13.222, num3= 18.934;
+    String text = "14";
+    
+    Double numdeci = Double.valueOf(num);
+    System.out.println(numdeci);
+
+    Double textdou = Double.valueOf(text);
+    System.out.println(textdou);
+    
+    String doutext = String.valueOf(num2);
+    System.out.println(doutext);
+    
+    Integer numEntero = Double.valueOf(num3).intValue();
+    System.out.println(numEntero);
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+    Double num = 3.14, num2 = 2.8689, 
+    num3 = 5.85, num4 = 4.49, num5 = 2.10;
+    System.out.println(" Double a Integer ");
+    System.out.println("------------------------------------------");
+    Integer numEnt = Double.valueOf(num).intValue();
+    System.out.println(numEnt);
+    Integer num2Ent= Double.valueOf(num2).intValue();
+    System.out.println(num2Ent);
+    Integer num3Ent= Double.valueOf(num3).intValue();
+    System.out.println(num3Ent);
+    Integer num4Ent= Double.valueOf(num4).intValue();
+    System.out.println(num4Ent);
+    Integer num5Ent= Double.valueOf(num5).intValue();
+    System.out.println(num5Ent);
+    System.out.println("integer a double");
+    System.out.println("------------------------------------------");
+    Integer n = 1945, n2= 2010,
+    n3 = 218, n4 = 684;
+    Double nEnt = Double.valueOf(n);
+    System.out.println(nEnt);
+    Double n2Ent = Double.valueOf(n2);
+    System.out.println(n2Ent);
+    Double n3Ent = Double.valueOf(n3);
+    System.out.println(n3Ent);
+    Double n4Ent = Double.valueOf(n4);
+    System.out.println(n4Ent);
+    }
+}
