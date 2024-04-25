@@ -1,0 +1,79 @@
+import java.util.Scanner;
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("¿Cuanta Experiencia tiene?");
+        Integer anos = scanner.nextInt();
+        if( anos <= 5)
+        {
+            System.out.println("Usted es un principiante");
+        }else if(anos > 5 && anos <= 10){
+            System.out.println("usted es un Intermedio");
+        } else if(anos > 10 ){
+            System.out.println("usted es un Experto");
+        }
+        
+    }
+}
+/////////////////////////////////////////////////////////////////////////
+
+import java.util.Scanner;
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+     Scanner scanner = new Scanner (System.in);
+     Integer r;
+        System.out.println("ingrese un Numero");
+        Integer num = scanner.nextInt();
+        r = num % 2;
+        if( r == 0)
+        {
+            System.out.println("El numero es par ");
+        }else if(r > 0){
+            System.out.println("El numero es impar");
+        } 
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////
+import java.util.Scanner;
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+     Scanner scanner = new Scanner (System.in);
+        System.out.println("ingrese una vocal:");
+        String pala = scanner.nextLine();
+        if (pala.equals("a")||pala.equals("A")){
+            System.out.println("Arbol ");
+        }else if (pala.equals("e")|| pala.equals("E") ){
+            System.out.println("Extra ");
+        }else if (pala.equals("i")||pala.equals("I")){
+            System.out.println("Inicio");
+        }else if (pala.equals("o")||pala.equals("O")){
+            System.out.println("Oso ");
+        }else if (pala.equals("u")||pala.equals("U")){
+            System.out.println("Uva");
+        }else{
+        System.out.println("no es una vocal");
+        }
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////
+import java.util.Scanner;
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+     Scanner scanner = new Scanner (System.in);
+        System.out.println("ingrese un año:");
+        Integer ano = scanner.nextInt();
+        if (ano % 4 == 0 && ano % 100 != 0  || ano % 400 == 0){
+                System.out.println("Es bisiesto");
+        }else{
+        System.out.println("no es bisiesto");
+        }
+    }
+}
