@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Scanner scanner = new Scanner(System.in);
+        int num, o = 0, r, s, i;
+        Double a, a1, r2;
+        do {
+        System.out.println("Menu");
+        System.out.println("1. los primeros 10 múltiplos de un número");
+        System.out.println("2. Responder si o no");
+        System.out.println("3. Encontrar el ángulo faltante ");
+        System.out.println("4. Salir ");
+        s = scanner.nextInt();
+    switch(s){   
+    case 1:
+        System.out.print("ingrese un numero: ");
+        num = scanner.nextInt();
+        do{
+        o++;
+        r= num * o;
+        System.out.println("multiplo numero "+ o + ". ="+r);
+        
+        }while(o < 10);
+    break;
+    case 2:
+            System.out.print("responda 'si' o 'no': ");
+            String pala = scanner.next();
+            if (pala.equalsIgnoreCase("si")) {
+             System.out.println("Bienvenido");
+            } else if (pala.equalsIgnoreCase("no")) {
+             System.out.println("Adios");
+            } else {
+             System.out.println("Respuesta inválida.");
+            }
+    break;
+    case 3: 
+    System.out.println("ingresa el primer angulo");
+    a = scanner.nextDouble();
+    System.out.println("ingresa el segundo angulo");
+    a1 = scanner.nextDouble();
+    
+    r2 = 180 - (a + a1);
+    
+    System.out.println("el angulo faltante es de: "+ r2);
+    break;
+    case 4:
+        System.out.println("fin del programa");
+    break;
+    default:
+            System.out.println("No es una opcion  ");
+    break;
+        
+    }
+      
+    }while(s != 4);
+}
+}
