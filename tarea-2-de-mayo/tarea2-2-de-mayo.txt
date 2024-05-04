@@ -1,0 +1,44 @@
+print("ingrese un numero : ")
+n = int(input())
+print("cuanto le quiere sumar: ")
+n1 = int(input())
+r= n +n1
+print(r)
+//////////////////////////////////////////////
+print("ingrese un numero : ")
+n = int(input())
+print("cuanto le quiere restar: ")
+n1 = int(input())
+r= n - n1
+print(r)
+///////////////////////////////////////////////
+print("ingrese un numero : ")
+n = int(input())
+print("cuanto lo quiere multiplicar: ")
+n1 = int(input())
+r= n * n1
+print(r)
+/////////////////////////////////////////////////
+print("ingrese un numero : ")
+n = int(input())
+print("cuanto lo quiere dividir: ")
+n1 = int(input())
+r= n / n1
+print(r)
+////////////////////////////////////////////////
+print("ingrese un numero base: ")
+n = int(input())
+print("ingrese un exponente: ")
+n1 = int(input())
+r= pow (n,n1)
+print(r)
+////////////////////////////////////////////////
+i = 1
+print("ingrese un numero para bucar su factorial: ")
+n = int(input())
+for c in range(1, n+1):
+    r = i * c 
+    
+    print(f"facorial numero {c} . = {r}")
+    i = r
+    
